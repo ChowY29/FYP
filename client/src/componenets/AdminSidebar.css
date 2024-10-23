@@ -1,0 +1,68 @@
+/* src/scenes/layout/AdminSidebar.css */
+.admin-layout {
+  display: flex; /* Ensure flex layout */
+}
+
+.admin-sidebar {
+  width: 80px; /* Initial width */
+  min-width: 80px; /* Ensure minimum width */
+  transition: width 0.3s ease; /* Smooth transition */
+  height: 100vh; /* Full height */
+  background-size: cover;
+  background-position: center;
+  color: black;
+  position: fixed; /* Fixed position */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure above other content */
+  overflow-x: hidden; /* Hide overflow to prevent horizontal scrollbar */
+}
+
+.admin-sidebar:hover {
+  width: 250px; /* Expanded width on hover */
+}
+
+.sidebar-logo {
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebar-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.nav-link {
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+  text-decoration: none; /* Remove underline */
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.sidebar-text {
+  display: none;
+}
+
+.admin-sidebar:hover .sidebar-text {
+  display: inline;
+}
+
+.content {
+  margin-left: 80px; /* Initial margin to accommodate sidebar */
+  transition: margin-left 0.3s ease; /* Smooth transition */
+}
+
+.admin-sidebar:hover + .content {
+  margin-left: 250px; /* Expanded margin on hover */
+}

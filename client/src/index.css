@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Paytone+One&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-paytone-one {
+  font-family: 'Paytone One', sans-serif;
+}
+
+.donate-button {
+  position: relative;
+  width: 204px;
+height: 59px;
+border-radius: 50px;
+border-width: thin;
+margin: 1.5rem;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fs-0 {
+  font-size: 4rem !important;
+}
+
+.custom-button-group {
+ 
+  color: black !important; /* Override text color */
+  border: none !important; /* Remove borders */
+}
+
+.custom-button-group .MuiButton-outlined { /* Targeting buttons inside the group */
+  border: none !important; /* Remove borders between buttons */
+  background-color: white
+}
+
+.custom-button-group .MuiButton-outlined:hover {
+  background-color: #DB8015 !important; /* Change hover color to orange */
+  color: white !important; /* Change hover text color to white */
+}
+
+.btn-custom-padding {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.rounded-start-custom {
+  border-top-left-radius: 25px !important;
+  border-bottom-left-radius: 25px !important;
+  padding-left: 1rem;
+}
+
+.rounded-end-custom {
+  border-top-right-radius: 25px !important;
+  border-bottom-right-radius: 25px !important;
+  padding-right: 1rem;
+}
+
+.btn-custom-padding {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+.btn-outline-primary {
+  border-width: 2px !important; /* Ensures the border isn't too thick */
+}
+
+/* Donation Sidebar CSS */
+
+.fixed-sidebar {
+  position: fixed;
+  top: 20px; /* Adjust as necessary */
+  right: 2rem; /* Subtract padding/margin as necessary */
+  width: 33.33333333%;
+}
+
+.Mui-selected {
+  background-color: #DB8015 !important; /* Change selected color to orange */
+  color: white !important; /* Change text color to white */
+}
+
+
+/* ------------------------------------------------------------ */
+.nav-link.active {
+  background-color: #ffc400; /* or any other color you prefer */
+  color: white;
+}
+
+.nav-link.active .sidebar-icon,
+.nav-link.active .sidebar-text {
+  color: white;
+}
